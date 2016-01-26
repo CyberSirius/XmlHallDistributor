@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Protocol>
+    <exam subject="XML">
+        <examType>PRACTICE</examType>
+        <examStart year="2016" month="1" day="27" hour="10" minute="0"/>
+        <examEnd year="2016" month="1" day="27" hour="13" minute="0"/>
+    </exam>
+    <hall hallNumber="107">
+        <faculty>FMI</faculty>
+        <numberOfSeats>100</numberOfSeats>
+    </hall>
+    <students facultyNumber="61754">
+        <firstName>Teodora</firstName>
+        <middleName>Vasileva</middleName>
+        <lastName>Vasileva</lastName>
+        <personalID>1234567890</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>4</group>
+    </students>
+    <students facultyNumber="61733">
+        <firstName>Martin</firstName>
+        <middleName>Hristov</middleName>
+        <lastName>Hristov</lastName>
+        <personalID>2123456789</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>3</group>
+    </students>
+    <students facultyNumber="61749">
+        <firstName>Philippa</firstName>
+        <middleName>Petkova</middleName>
+        <lastName>Petkova</lastName>
+        <personalID>1234567893</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>5</group>
+    </students>
+    <students facultyNumber="61755">
+        <firstName>Kalina</firstName>
+        <middleName>Stoyanova</middleName>
+        <lastName>Stoyanova</lastName>
+        <personalID>4123456789</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>5</group>
+    </students>
+    <students facultyNumber="61909">
+        <firstName>Ivan</firstName>
+        <middleName>Georgiev</middleName>
+        <lastName>Ivanov</lastName>
+        <personalID>5123456789</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>1</course>
+        <group>1</group>
+    </students>
+    <students facultyNumber="61702">
+        <firstName>Strashimir</firstName>
+        <middleName>Zahariev</middleName>
+        <lastName>Rashev</lastName>
+        <personalID>9412294509</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>4</group>
+    </students>
+    <students facultyNumber="61666">
+        <firstName>Radka</firstName>
+        <middleName>Dicheva</middleName>
+        <lastName>Dicheva</lastName>
+        <personalID>7123456789</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>3</group>
+    </students>
+    <students facultyNumber="61686">
+        <firstName>Lazar</firstName>
+        <middleName>Lazarov</middleName>
+        <lastName>Lazarov</lastName>
+        <personalID>8123456789</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>4</group>
+    </students>
+    <students facultyNumber="61700">
+        <firstName>Dimitar</firstName>
+        <middleName>Kerezov</middleName>
+        <lastName>Kerezov</lastName>
+        <personalID>9123456789</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>2</group>
+    </students>
+    <students facultyNumber="61677">
+        <firstName>Rositsa</firstName>
+        <middleName>Zlateva</middleName>
+        <lastName>Zlateva</lastName>
+        <personalID>1234567890</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>4</group>
+    </students>
+</Protocol>

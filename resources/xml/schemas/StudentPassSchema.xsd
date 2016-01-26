@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+
+    <xs:element name="Student" type="student"/>
+
+    <xs:element name="Exam" type="exam"/>
+
+    <xs:element name="Hall" type="hall"/>
+
+    <xs:element name="StudentPass" type="studentPass"/>
+
+    <xs:element name="Time" type="time"/>
+
+    <xs:complexType name="studentPass">
+        <xs:sequence>
+            <xs:element name="student" type="student" minOccurs="0"/>
+            <xs:element name="exam" type="exam" minOccurs="0"/>
+            <xs:element name="hall" type="hall" minOccurs="0"/>
+            <xs:element name="placeInHall" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="facultyNumber" type="xs:int" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="student">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="middleName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="personalID" type="xs:string"/>
+            <xs:element name="degree" type="degree"/>
+            <xs:element name="course" type="xs:int"/>
+            <xs:element name="group" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="facultyNumber" type="xs:int" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="exam">
+        <xs:sequence>
+            <xs:element name="examType" type="examType" minOccurs="0"/>
+            <xs:element name="examStart" type="time" minOccurs="0"/>
+            <xs:element name="examEnd" type="time" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="subject" type="subject"/>
+    </xs:complexType>
+
+    <xs:complexType name="time">
+        <xs:sequence/>
+        <xs:attribute name="day" type="xs:int" use="required"/>
+        <xs:attribute name="hour" type="xs:int" use="required"/>
+        <xs:attribute name="minute" type="xs:int" use="required"/>
+        <xs:attribute name="month" type="xs:int" use="required"/>
+        <xs:attribute name="year" type="xs:int" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="hall">
+        <xs:sequence>
+            <xs:element name="faculty" type="faculty" minOccurs="0"/>
+            <xs:element name="numberOfSeats" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="hallNumber" type="xs:int" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="degree">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SoftwareEngineering"/>
+            <xs:enumeration value="ComputerScience"/>
+            <xs:enumeration value="InformationSystems"/>
+            <xs:enumeration value="Informatics"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="examType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="THEORY"/>
+            <xs:enumeration value="PRACTICE"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="subject">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Math"/>
+            <xs:enumeration value="XML"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--    <xs:simpleType name="name">
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]([a-z])*"/>
+            </xs:restriction>
+        </xs:simpleType>-->
+
+    <xs:simpleType name="faculty">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FMI"/>
+            <xs:enumeration value="FHF"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+

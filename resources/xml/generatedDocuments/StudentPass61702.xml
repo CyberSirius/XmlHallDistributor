@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../styles/student_style.xsl"?>
+<StudentPass facultyNumber="61702">
+    <student facultyNumber="61702">
+        <firstName>Strashimir</firstName>
+        <middleName>Zahariev</middleName>
+        <lastName>Rashev</lastName>
+        <personalID>9412294509</personalID>
+        <degree>SoftwareEngineering</degree>
+        <course>3</course>
+        <group>4</group>
+    </student>
+    <exam subject="XML">
+        <examType>PRACTICE</examType>
+        <examStart year="2016" month="1" day="27" hour="10" minute="0"/>
+        <examEnd year="2016" month="1" day="27" hour="13" minute="0"/>
+    </exam>
+    <hall hallNumber="107">
+        <faculty>FMI</faculty>
+        <numberOfSeats>100</numberOfSeats>
+    </hall>
+    <placeInHall>6</placeInHall>
+</StudentPass>
