@@ -15,7 +15,7 @@
                 <xsl:value-of select="StudentPass/student/lastName"/>
                 <br/>
                 Faculty Number:
-                <xsl:value-of select="StudentPass/student"/>
+                <xsl:value-of select="StudentPass/student/@facultyNumber"/>
                 <br/>
                 Personal ID:
                 <xsl:value-of select="StudentPass/student/personalID"/>
@@ -28,8 +28,11 @@
                 <br/>
                 Group:
                 <xsl:value-of select="StudentPass/student/group"/>
+                <br/>
+                Place in hall:
+                <xsl:value-of select="StudentPass/placeInHall"/>
+                <br/>
             </body>
         </html>
     </xsl:template>
-
 </xsl:stylesheet>

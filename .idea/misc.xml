@@ -13,5 +13,8 @@
     <file url="file://$PROJECT_DIR$/resources/xml/styles/student_style.xsl">
       <association url="file://$PROJECT_DIR$/resources/xml/generatedDocuments/StudentPass61702.xml" />
     </file>
+    <file url="file://$PROJECT_DIR$/resources/xml/styles/protocol_style.xsl">
+      <association url="file://$PROJECT_DIR$/resources/xml/protocols/Protocol.xml" />
+    </file>
   </component>
 </project>
